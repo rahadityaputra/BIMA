@@ -10,7 +10,6 @@
 	<body>				
 		<div class="container-fluid rounded-2 mx-auto mt-5 p-5" style="background-color: white; width: 400px">
 			<div class="row d-flex justify-content-center">
-				<!-- <div class="col-3"></div> -->
 				<div class="col-7" style="width: 100px">
 					<img src="image/bima.jpg" alt="" class="img-fluid rounded-circle" />
 				</div>
@@ -19,21 +18,21 @@
 			<h3 class="text-center">Sistem Informasi Akademik</h3>
 
 			<!-- form  -->
-			<form class="">
+			<form action="index.php" method="post">
 				<div class="mb-3">
 					<label for="exampleInputEmail1" class="form-label">User Name</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required/>
 				</div>
 				<div class="mb-3">
 					<label for="exampleInputPassword1" class="form-label">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1"/>
+					<input type="password" class="form-control bi-eye-slash" id="exampleInputPassword1" name="password" required/>
 				</div>
 				<div class="mb-3 form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1" />
+					<input type="checkbox" class="form-check-input" id="exampleCheck1" name="verification"/>
 					<label class="form-check-label" for="exampleCheck1">Saya bukan robot</label>
 				</div>
 				<div class="d-grid gap-2 mb-3">
-					<button class="btn btn-primary" type="button">Log In</button>
+					<button class="btn btn-primary" type="submit" name="submit">Log In</button>
 				</div>
 			</form>
 		</div>

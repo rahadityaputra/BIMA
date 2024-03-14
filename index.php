@@ -1,3 +1,24 @@
+<?php 
+
+require 'data.php';	
+// membuat logika untuk mengatasi user saat login salah input email atau password
+$login = false;
+$id_user = 0;
+foreach ($students as $student) {
+	if ($_POST["email"] == $student["email"] && $_POST["password"] == $student["password"] && $_POST["verification"] == "on" ) {
+		$login = true;
+		break;
+	}
+	$id_user++;
+}
+
+if (!$login) {
+	header("Location: login.php");
+	exit();
+
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -52,7 +73,12 @@
 		<section class="container-fluid mt-5">
 			<div class="row justify-content-center p-5">
 				<div class="col-6">
-					<h3 class="text-center">RAHADITYA ABIMANYU PUTRA <span class="opacity-50 fs-3">(123230095)</span></h3>
+					<h3 class="text-center">
+						<?php echo $students[$id_user]["name"] ?>
+						<span class="opacity-50 fs-3">
+							 (<?php echo $students[$id_user]["nim"] ?>)
+						</span>
+					</h3>
 					<h4 class="fs-5 fw-light text text-center">Fakultas Teknik Industri | Teknik Informatika | Informatika</h4>
 				</div>
 			</div>
