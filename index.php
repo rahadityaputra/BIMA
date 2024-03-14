@@ -78,7 +78,7 @@ if (!$login) {
 						<span class="opacity-50 fs-3">
 							 (<?php echo $students[$id_user]["nim"] ?>)
 						</span>
-					</h3>
+					</h3>		
 					<h4 class="fs-5 fw-light text text-center">Fakultas Teknik Industri | Teknik Informatika | Informatika</h4>
 				</div>
 			</div>
