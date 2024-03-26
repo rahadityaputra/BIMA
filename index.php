@@ -72,18 +72,31 @@ if (!$login) {
 		<!-- content main -->
 		<section class="container-fluid mt-5">
 			<div class="row justify-content-center p-5">
-				<div class="col-6">
+				<div class="col-12">
 					<h3 class="text-center">
-						<?php echo $students[$id_user]["name"] ?>
-						<span class="opacity-50 fs-3">
+						<span class="text-center">
+							<?php echo $students[$id_user]["name"] ?>
+						</span>
+						<span class="opacity-50 fs-3 text-center">
 							 (<?php echo $students[$id_user]["nim"] ?>)
 						</span>
-					</h3>		
-					<h4 class="fs-5 fw-light text text-center">Fakultas Teknik Industri | Teknik Informatika | Informatika</h4>
+					</h3>
+					<div class="row justify-content-center">
+						<div class="col-lg-2 col-sm-12">
+							<h4 class="fs-6 fw-light text text-center">Fakultas Teknik Industri</h4>
+						</div>
+						<div class="col-lg-2 col-sm-12">
+							<h4 class="fs-6 fw-light text text-center">Teknik Informatika</h4>
+						</div>
+						<div class="col-lg-2 col-sm-12">
+							<h4 class="fs-6 fw-light text text-center">Informatika</h4>
+						</div>
+					</div>		
+					
 				</div>
 			</div>
 			<div class="row bg-light p-5">
-				<div class="col-6">
+				<div class="col-xl-6">
 					<h6>Informasi</h6>
 					<hr />
 					<dl>
@@ -95,7 +108,7 @@ if (!$login) {
 						<dd>tidak ada tunggakan</dd>
 					</dl>
 				</div>
-				<div class="col-6">
+				<div class="col-xl-6">
 					<h6>Pengumuman</h6>
 					<hr />
 					<!-- Button trigger modal -->
