@@ -1,6 +1,10 @@
 <?php 
+// menyambungkan ke file function.php
+require 'functions.php';	
 
-require 'data.php';	
+// membuat variabel untuk menampung data mahasiswa dari database
+$students = query("SELECT * FROM students");
+
 // membuat logika untuk mengatasi user saat login salah input email atau password
 $login = false;
 $id_user = 0;
