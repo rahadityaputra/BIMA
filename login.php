@@ -8,6 +8,21 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<!-- nav -->
+		<!-- <nav class="navbar navbar-dark navbar-expand-lg">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="btn btn-primary nav-link active" aria-current="page" href="signup.php">Sign Up</a>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</nav> -->
+		<!-- akhir dari nav -->
+
+		<!-- container -->
 		<div class="contaner d-flex justify-content-center align-items-center">
 			<div class="container-fluid rounded-2 m-3 p-5" style="background-color: white; max-width: 400px; min-width: 250px" >
 				<div class="row d-flex justify-content-center">
@@ -34,6 +49,7 @@
 					</div>
 					<div class="d-grid gap-2 mb-3">
 						<button class="btn btn-primary" type="submit" name="submit">Log In</button>
+						<a class="text-center nav-link" href="signup.php">Don't have an account ? Register</a>
 					</div>
 				</form>
 			</div>
